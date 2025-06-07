@@ -1,0 +1,127 @@
+/* CSS kamu dari yang sudah ada */
+        .mountain-recommendation {
+            text-align: center;
+            margin: 50px auto;
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            padding: 20px;
+            position: relative;
+        }
+        .mountain-recommendation h1 {
+            font-size: 2.5rem;
+            margin-top: 100px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .recomen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            height: 500px;
+            padding: 50px; 
+        }
+        .recomen-container {
+            width: 100%;
+            max-width: 8000px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+        .recomen-container-inner {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+        }
+        .recomen-item {
+            flex: 0 0 calc(100% - 20px); /* Menghitung margin */
+            display: flex;
+            flex-direction: column; /* Tata letak vertikal */
+            min-width: calc(100% - 20px); /* Menghitung margin */
+            box-sizing: border-box;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 0 10px;
+            height: 320px; /* Tinggi tetap yang lebih pendek */
+            max-height: 320px; /* Batas maksimum tinggi */
+        }
+        .image-mountain {
+            width: 100%;
+            height: 150px; /* Tinggi gambar lebih pendek */
+            object-fit: cover;
+            flex-shrink: 0; /* Hindari gambar menyusut */
+        }
+        .mountain-details {
+            padding: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden; /* Hanya untuk konten teks */
+        }
+        .mountain-details h2 {
+            font-size: 1.2rem;
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .mountain-details p {
+            margin: 0 0 15px 0;
+            color: #666;
+            line-height: 1.4;
+            font-size: 0.9rem;
+            flex-grow: 1;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Batasi jumlah baris teks */
+            -webkit-box-orient: vertical;
+        }
+        .view-more-btn {
+            align-self: flex-start;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-top: auto; /* Posisikan di bawah */
+        }
+        .view-more-btn:hover {
+            background-color: #f76b1c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-control {
+            z-index: 1000 !important;
+            background-color: rgba(255, 255, 255, 0.7);
+            color: #f76b1c;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            padding: 5px 11px;
+            border-radius:50%;
+            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+            z-index: 1000;
+            position: absolute;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .carousel-control:hover {
+            background-color: #f76b1c;
+            color: rgb(255, 255, 255);
+        }
+        .carousel-control.prev {
+            left: -10px;
+        }
+
+        .carousel-control.next {
+            right: -10px;
+        }

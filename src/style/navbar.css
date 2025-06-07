@@ -1,0 +1,83 @@
+header {
+    background-color: rgba(255, 255, 255, 0); /* Transparent background */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Keeps the navbar at the top when scrolling */
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+    margin: 0;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.logo h2 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.first-word {
+    color: #f76b1c;
+}
+
+.second-word {
+    color: rgb(242, 142, 28);
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.823); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff8c00;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+
+}
+
+nav ul li a:hover {
+    border-radius: 8px;
+    background-color: #f76b1c;
+    color: #ffffff;
+}
+
+.user-icon-wrapper {
+    cursor: pointer;
+}
+
+.user-icon {
+  font-size: 20px;
+  color: #ff8c00;
+  background-color: transparent;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.user-icon:hover {
+  background-color: #f76b1c;
+  color: #ffffff;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Jarak antara nav dan ikon user */
+}
+

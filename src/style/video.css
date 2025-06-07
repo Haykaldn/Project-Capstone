@@ -1,0 +1,60 @@
+/* Video Section */
+.video {
+    background-color: #ffffff;
+    padding: 80px 0; /* Increase padding for better spacing */
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    position: relative;
+}
+
+/* Video Content */
+.video-content {
+    margin-bottom: 40px; /* Adjusted margin for more balance */
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+}
+
+/* Title in Video Content */
+.video-content h1 {
+    font-size: 36px; /* Slightly increased size for better visibility */
+    font-weight: bold;
+    position: relative;
+    color: #f76b1c;
+    margin-bottom: 15px; /* Slightly reduced margin for better alignment */
+    line-height: 1.2;
+}
+
+/* Paragraph in Video Content */
+.video-content p {
+    font-size: 18px; /* Slightly reduced font size for consistency */
+    line-height: 1.6; /* Adjusted line-height for better readability */
+    margin-top: 20px;
+    padding: 0 40px; /* Adjusted padding for a cleaner look */
+    text-align: center;
+    color: #333333; /* Added a more neutral text color */
+}
+
+/* Video Wrapper */
+.video-wrapper {
+    width: 100%;
+    max-width: 720px; /* Slightly adjusted width for better proportion */
+    background-color: transparent;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for better depth */
+    border-radius: 20px;
+    margin: 0 auto; /* Centers the video wrapper */
+}
+
+/* Video Player */
+.video-player {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 2px solid #f76b1c; /* Optional border for visual enhancement */
+}

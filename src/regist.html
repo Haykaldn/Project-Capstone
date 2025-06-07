@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunung Kawi</title>
+    <link rel="icon" href="public/image/logo.png" sizes="512x512" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/page.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/profile.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/regist.css">
+</head>
+<body>
+    <!-- Konten Utama -->
+    <section>
+        <div class="overlay"></div>
+        <div class="form-container">
+            <!-- Form Register -->
+            <div id="register-form" class="form-content active">
+                <div class="form-header">
+                    <h1>Hi, Welcome</h1>
+                </div>
+
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="john.doe@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="john.doe@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="john.doe@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="john.doe@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" class="password-input" placeholder="........">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" class="password-input" placeholder="........">
+                        </div>
+                    </div>
+
+                    <div class="terms-checkbox">
+                        <input type="checkbox" id="agreeTerms" required>
+                        <label for="agreeTerms">I agree to all the Terms and Privacy Policies</label>
+                    </div>
+
+                    <button type="submit" class="form-btn">Register</button>
+
+                    <div class="switch-form">
+                        Already have an account? <a href="#" id="to-login">Login</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Form Login -->
+            <div id="login-form" class="form-content">
+                <div class="form-header">
+                    <h1>Welcome Back</h1>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" class="password-input" placeholder="........">
+                    </div>
+
+                    <button type="submit" class="form-btn">Login</button>
+
+                    <div class="switch-form">
+                        Don't have an account? <a href="#" id="to-register">Register</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Menghubungkan file JavaScript -->
+    <script type="module" src="script/script.js"></script>
+    <script type="module" src="script/nav.js"></script>
+    <script type="module" src="script/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Main container */
+.mountains {
+  max-width: 1000px; /* Mengurangi lebar container */
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Gambar pada card */
+.mountain-image {
+  width: 100%; /* Menyesuaikan lebar gambar dengan lebar card */
+  height: 50%; /* Gambar menutupi setengah card */
+  object-fit: cover; /* Memastikan gambar ter-crop dengan baik */
+  border-radius: 10px 10px 0 0; /* Mengatur border-radius hanya pada bagian atas */
+}
+
+/* Heading style */
+.mountains h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 50px; /* Menurunkan posisi heading */
+  margin-bottom: 10px; /* Memberikan jarak bawah */
+  color: #333;
+}
+
+/* Card container */
+.mountain-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  background-color: rgb(231, 138, 8);
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Individual card style */
+.mountain-card {
+  width: 280px; /* Lebar card */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Agar gambar dan konten dalam card terpotong dengan rapi */
+  margin: 20px;
+  height: 210px; /* Menentukan tinggi card agar gambar memenuhi setengah card */
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Menambahkan posisi relatif pada card untuk tombol */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease; /* Efek transisi saat hover */
+}
+
+.mountain-card:hover {
+  transform: translateY(-5px); /* Efek hover card */
+}
+
+/* Card heading */
+.mountain-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: #222;
+  font-weight: bold;
+   padding: 0 10px;
+   margin-top: 15px;
+}
+
+/* Card description text */
+.mountain-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+/* View More link */
+.mountain-content a {
+  display: inline-flex;
+  align-items: center;
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.mountain-content a:hover {
+  text-decoration: underline;
+}
+
+/* Arrow after View More */
+.mountain-content a::after {
+  content: "→";
+  margin-left: 5px;
+  transition: transform 0.2s ease;
+}
+
+.mountain-content a:hover::after {
+  transform: translateX(3px);
+}
+
+/* Tombol View More */
+.mountain-btn {
+  background-color: #ff8c00; /* Warna tombol */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  position: absolute; /* Menempatkan tombol di posisi yang sudah ditentukan */
+  bottom: 10px; /* Menempatkan tombol di bagian bawah card */
+  right: 10px; /* Menempatkan tombol di bagian kanan card */
+}
+
+.mountain-btn:hover {
+  background-color: #f76b1c;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mountain-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 10px 0;
+  }
+}

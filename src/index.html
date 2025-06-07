@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MountInsight</title>
+    <link rel="icon" href="public/image/logo.png" sizes="512x512" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/video.css">
+    <link rel="stylesheet" href="style/list.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/recomen.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2><span class="first-word">Mount</span><span class="second-word">Insight</span></h2>
+        </div>
+
+        <div class="right-section">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="mountain.html">Mountain</a></li>
+                    <li><a href="#">Our Team</a></li>
+                </ul>
+            </nav>
+            <div class="user-icon-wrapper">
+                <i class="fas fa-user user-icon"></i>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Explore The Beauty of Mountains on East Java</h1>
+            <div class="form-container">
+                <h2>Filter Pendakian</h2>
+
+                <div class="price-range">
+                    <label>Budget</label>
+                    <div class="range-labels">
+                        <span>Rp. 100.000</span>
+                        <span>Rp. 1.200.000</span>
+                    </div>
+                    <input type="range" id="priceSlider" min="100000" max="1200000" step="10000" value="10000">
+                    <div id="hargaValue">Rp. 100.000</div>
+                </div>
+
+                <label>Kesulitan</label>
+                <div class="difficulty-options">
+                    <label><input type="radio" name="difficulty"> Mudah</label>
+                    <label><input type="radio" name="difficulty"> Sedang</label>
+                    <label><input type="radio" name="difficulty"> Sulit</label>
+                </div>
+
+                <label for="daerah">Daerah</label>
+                <select id="daerah" name="daerah" required>
+                    <option value="" disabled selected hidden>Pilih Kota</option>
+                    <option value="bromo">Gunung Bromo</option>
+                    <option value="rinjani">Gunung Rinjani</option>
+                    <option value="semeru">Gunung Semeru</option>
+                </select>
+                <button class="btn-cari">Cari</button>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="mountain-recommendation">
+            <div class="recommendation-layout">
+                <h1>Mountain Recommendation</h1>
+                <div class="recomen">
+                    <button class="carousel-control prev" onclick="moveSlide(-1)">❮</button>
+
+                    <div class="recomen-container">
+                        <div class="recomen-container-inner">
+                            <div class="recomen-item">
+                                <img src="public/image/Kawi.png" alt="Gunung Kawi" class="image-mountain" />
+                                <div class="mountain-details">
+                                    <h2>Gunung Kawi</h2>
+                                    <p>Gunung yang cocok untuk pemula dengan jalur yang cukup ramah dan suasana mistis yang khas.</p>
+                                    <a href="mountain.html" class="view-more-btn">View More</a>
+                                </div>
+                            </div>
+                            <div class="recomen-item">
+                                <img src="public/image/semeru.webp" alt="Gunung Semeru" class="image-mountain" />
+                                <div class="mountain-details">
+                                    <h2>Gunung Semeru</h2>
+                                    <p>Gunung tertinggi di Pulau Jawa. Cocok untuk pendaki berpengalaman. Jalur menantang dan indah.</p>
+                                    <a href="#" class="view-more-btn">View More</a>
+                                </div>
+                            </div>
+                            <div class="recomen-item">
+                                <img src="public/image/gunung.png" alt="Gunung Rinjani" class="image-mountain" />
+                                <div class="mountain-details">
+                                    <h2>Gunung Rinjani</h2>
+                                    <p>Gunung eksotis di Lombok dengan pemandangan Danau Segara Anak yang memukau.</p>
+                                    <a href="#" class="view-more-btn">View More</a>
+                                </div>
+                            </div>
+                            <div class="recomen-item">
+                                <img src="public/image/bromo.jpg" alt="Gunung Sindoro" class="image-mountain" />
+                                <div class="mountain-details">
+                                    <h2>Gunung Sindoro</h2>
+                                    <p>Gunung di Jawa Tengah yang terkenal dengan sunrise-nya. Jalurnya cukup menanjak tapi bersahabat.</p>
+                                    <a href="#" class="view-more-btn">View More</a>
+                                </div>
+                            </div>
+                            <div class="recomen-item">
+                                <img src="public/image/Kawi.png" alt="Gunung Prau" class="image-mountain" />
+                                <div class="mountain-details">
+                                    <h2>Gunung Prau</h2>
+                                    <p>Gunung pendek favorit pendaki pemula, terkenal dengan bukit teletubbies dan sunrise yang cantik.</p>
+                                    <a href="#" class="view-more-btn">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control next" onclick="moveSlide(1)">❯</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="video">
+        <div class="video-content">
+            <h1>Menjelajahi Keindahan Gunung di Jawa Timur</h1>
+            <p>Temukan petualangan tak terlupakan dengan mendaki gunung-gunung terbaik di Jawa Timur. Dari puncak yang menantang hingga pemandangan spektakuler, jelajahi keindahan alam yang tak ada duanya</p>
+        </div>
+        <div class="video-wrapper">
+            <video class="video-player" controls>
+                <source src="public/image/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section class="mountains">
+    <h2>Mountains</h2>
+    <div class="mountain-card-container">
+        <div class="mountain-card">
+            <img src="public\image\Kawi.png" alt="Gunung Kawi" class="mountain-image">
+            <div class="mountain-content">
+                <h3>Gunung Kawi</h3>
+                <p>Gunung Kawi...</p>
+                <button class="mountain-btn">View More</button>
+            </div>
+        </div>
+        <div class="mountain-card">
+            <img src="public\image\Kawi.png" alt="Gunung Kawi" class="mountain-image">
+            <div class="mountain-content">
+                <h3>Gunung Kawi</h3>
+                <p>Gunung Kawi...</p>
+                <button class="mountain-btn">View More</button>
+            </div>
+        </div>
+        <div class="mountain-card">
+            <img src="public\image\Kawi.png" alt="Gunung Kawi" class="mountain-image">
+            <div class="mountain-content">
+                <h3>Gunung Kawi</h3>
+                <p>Gunung Kawi...</p>
+                <button class="mountain-btn">View More</button>
+            </div>
+        </div>
+        <div class="mountain-card">
+            <img src="public\image\Kawi.png" alt="Gunung Kawi" class="mountain-image">
+            <div class="mountain-content">
+                <h3>Gunung Kawi</h3>
+                <p>Gunung Kawi...</p>
+                <button class="mountain-btn">View More</button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">MountInsight</div>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        <div class="copyright">
+            Copyright @ 2025 MountInsight. All rights reserved
+        </div>
+    </div>
+</footer>
+    <script type="module" src="script/script.js"></script>
+    <script type="module" src="script/recomen.js"></script>
+    <script type="module" src="script/nav.js"></script>
+</body>
+</html>

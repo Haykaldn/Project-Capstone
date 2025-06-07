@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunung Kawi</title>
+    <link rel="icon" href="public/image/logo.png" sizes="512x512" />
+    <!-- Menambahkan Font Awesome untuk ikon user -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style/page.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+    <!-- Navbar -->
+   <header>
+        <div class="logo">
+            <h2><span class="first-word">Mount</span><span class="second-word">Insight</span></h2>
+        </div>
+        <div class="right-section">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="mountain.html">Mountain</a></li>
+                    <li><a href="#">Our Team</a></li>
+                </ul>
+            </nav>
+            <div class="user-icon-wrapper">
+                <i class="fas fa-user user-icon"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Konten Utama -->
+    <section>
+        <div class="mountain-hero">
+            <div class="image-container">
+                <img src="public/image/Kawi.png" alt="Pemandangan Gunung Kawi" class="mountain-image">
+                <h1>Gunung Kawi</h1>
+            </div>
+            <div class="mountain-content">
+                <div class="mountain-intro">
+                    <p>Gunung Kawi adalah gunung yang terletak di perbatasan antara Jawa Timur dan Jawa Tengah, terkenal dengan keindahan alam dan nilai mistisnya.</p>
+                    <p>Terletak di Kecamatan Wonosari, Kabupaten Malang, Jawa Timur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comments-section">
+        <div class="comments-header">
+            <h3>Comments</h3>
+            <div class="comment-form">
+                <textarea placeholder="Write yours here..." class="comment-input" id="commentInput"></textarea>
+                    <div class="form-actions">
+                        <button class="post-button" id="postButton">Post</button>
+                    </div>
+            </div>
+        </div>
+        
+        <div class="comments-list" id="commentsList">
+            <!-- Existing comments will appear here -->
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">MountInsight</div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            <div class="copyright">
+                Copyright @ 2025 MountInsight. All rights reserved
+            </div>
+        </div>
+    </footer>
+    <!-- Menghubungkan file JavaScript -->
+    <script type="module" src="script/script.js"></script>
+    <script type="module" src="script/nav.js"></script>
+    <script type="module" src="script/coment.js"></script>
+</body>
+</html>

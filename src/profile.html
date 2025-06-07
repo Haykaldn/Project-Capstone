@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gunung Kawi</title>
+    <link rel="icon" href="public/image/logo.png" sizes="512x512" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/page.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/profile.css">
+    <link rel="stylesheet" href="style/footer.css">
+</head>
+<body>
+    <!-- Navbar -->
+   <header>
+        <div class="logo">
+            <h2><span class="first-word">Mount</span><span class="second-word">Insight</span></h2>
+        </div>
+        <div class="right-section">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Map</a></li>
+                    <li><a href="#">Mountain</a></li>
+                    <li><a href="#">Our Team</a></li>
+                </ul>
+            </nav>
+            <div class="user-icon-wrapper">
+                <i class="fas fa-user user-icon"></i>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Konten Utama -->
+    <section>
+        <div class="profile-container">
+            <h1>My Profile</h1>
+            <div class="profile-content">
+                
+                <!-- FOTO PROFIL -->
+                <div class="profile-picture">
+                    <img id="profileImage" src="default-profile.jpg" alt="Profile Picture">
+                    <div class="button-wrapper">
+                        <input type="file" id="uploadInput" accept="image/*" hidden>
+                        <button id="changePicBtn" onclick="document.getElementById('uploadInput').click()" disabled>
+                        Change Profile Picture
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- FORM PROFIL -->
+                <div class="profile-info">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" value="Awe" disabled />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="awe1234@gmail.com" disabled />
+                </div>
+                <div>
+                    <label for="age">Age</label>
+                    <input type="number" id="age" value="19" disabled />
+                </div>
+                <!-- Tambahan data lainnya -->
+                <div>
+                    <label for="gender">Gender</label>
+                    <select id="gender" disabled>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="birthdate">Birthdate</label>
+                    <input type="date" id="birthdate" disabled />
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" placeholder="+62..." disabled />
+                </div>
+                <button id="editBtn">Edit Profile</button>
+                <button id="saveBtn" style="display: none;">Save Profile</button>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">MountInsight</div>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="copyright">
+                    Copyright @ 2025 MountInsight. All rights reserved
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- Menghubungkan file JavaScript -->
+    <script type="module" src="script/script.js"></script>
+    <script type="module" src="script/nav.js"></script>
+    <script type="module" src="script/profilePicture.js"></script>
+</body>
+</html>
